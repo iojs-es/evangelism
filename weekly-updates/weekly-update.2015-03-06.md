@@ -5,10 +5,10 @@ El viernes, 6 de Marzo, [@rvagg](https://github.com/rvagg) publicó io.js [**v1.
 ### Cambios notables
 
 * **buffer**: Nuevo método `Buffer#indexOf()`, modelado a partir de [`Array#indexOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf). Acepta String, Buffer o un Number. Strings se interpretan como UTF8. (Trevor Norris) [#561](https://github.com/iojs/io.js/pull/561)
-* **fs**: properties del object `options` en los métodos de `'fs'` no llevan a cabo la comprobación `hasOwnProperty()`, permitiendo así que los objetos opciones con propiedades en el prototype. (Jonathan Ong) [#635](https://github.com/iojs/io.js/pull/635)
-* **tls**: Un probable memory leak en TLS fue informado por PayPal. Algunos de los cambios recientes en **stream_wrap** paracen tener la culpa. El cambio inicial está en [#1078](https://github.com/iojs/io.js/pull/1078), puedes seguir la pista al progreso hacia terminar con el leak en [#1075](https://github.com/iojs/io.js/issues/1075) (Fedor Indutny).
-* **npm**: Actualizar a npm 2.7.0. Véase [npm CHANGELOG.md](https://github.com/npm/npm/blob/master/CHANGELOG.md#v270-2015-02-26) para los detalles incluyendo porqué es un semver-minor cuando podría haber sido semver-major.
-* **TC**: Colin Ihrig (@cjihrig) resignó como TC devido a su deseo de programar más e ir a menos reuninones.
+* **fs**: el objeto de propiedades `options` en los métodos de `'fs'` no llevarán más a cabo la comprobación `hasOwnProperty()`, permitiendo así que los objetos de opciones con propiedades en el prototype. (Jonathan Ong) [#635](https://github.com/iojs/io.js/pull/635)
+* **tls**: Un probable memory leak en TLS fue informado por PayPal. Algunos de los cambios recientes en **stream_wrap** paracen tener la culpa. La solución inicial está en [#1078](https://github.com/iojs/io.js/pull/1078), puedes seguir cómo se progresa en la solución del leak en [#1075](https://github.com/iojs/io.js/issues/1075) (Fedor Indutny).
+* **npm**: Actualización a npm 2.7.0. Véase [npm CHANGELOG.md](https://github.com/npm/npm/blob/master/CHANGELOG.md#v270-2015-02-26) para los detalles incluyendo porqué es un semver-minor cuando podría haber sido semver-major.
+* **TC**: Colin Ihrig (@cjihrig) resignó del TC debido a su deseo de programar más e ir a menos reuninones.
 
 ### Problemas conocidos
 
