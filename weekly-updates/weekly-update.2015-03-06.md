@@ -22,7 +22,7 @@ El viernes, 6 de Marzo, [@rvagg](https://github.com/rvagg) publicó io.js [**v1.
 
 * Puedes relajarte sabiendo que io.js y el último node.js [**no están afectados**](https://strongloop.com/strongblog/are-node-and-io-js-affected-by-the-freak-attack-openssl-vulnerability/) por el [FREAK Attack](https://freakattack.com/). ¿Estás utilizando la última versión de io.js o la última versíon de node.js, verdad?
 
-* Walmart patrocina ahora una máquina build para el sistema IC de io.js de Jenkins.  El equipo @iojs/build está trabajando en crear binarios de io.js para SunOS (como los que puedes obtener de nodejs.org). Un fix en V8 ([iojs/io.js#1079](https://github.com/iojs/io.js/pull/1079)) necesita de llegar antes de que más progreso pueda hacerse.
+* Walmart patrocina ahora una máquina build para el sistema IC de io.js de Jenkins.  El equipo @iojs/build está trabajando en crear binarios de io.js para SunOS (como los que puedes obtener de nodejs.org). Un fix en V8 ([iojs/io.js#1079](https://github.com/iojs/io.js/pull/1079)) necesita de llegar antes de que pueda hacerse más progreso.
 * También nos gustaría dar las gracias a las siguientes compañías por contribuir con hardware y tecnologías/soporte/ingeniería para builds de io.js:
   * **Digital Ocean** (Linux principalmente)
   * **Rackspace** (Windows principalmente)
