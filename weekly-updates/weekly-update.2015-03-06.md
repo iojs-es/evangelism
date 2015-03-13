@@ -39,11 +39,11 @@ El viernes, 6 de Marzo, [@rvagg](https://github.com/rvagg) publicó io.js [**v1.
 * El io.js [Docker build](https://registry.hub.docker.com/u/library/iojs/) es uno de los trece nuevos [repositorios oficiales de Docker](http://blog.docker.com/2015/03/thirteen-new-official-repositories-added-in-january-and-february/) añadidos en Enero y Febrero.
 
 * Gente de NodeBots y IoT debería de estar feliz por escuchar que el recién anunciado [**Tessel2**](http://blog.technical.io/post/112787427217/tessel-2-new-hardware-for-the-tessel-ecosystem) usa [io.js de forma nativa](http://blog.technical.io/post/112888410737/moving-faster-with-io-js).
-* [**@maxbeatty**](https://twitter.com/maxbeatty) está trabajando en una nueva versión del backend de [jsperf.com](http://jsperf.com/), usando io.js y está enteramente en [código abierto](https://github.com/jsperf/jsperf.com).  ¡Contribuciones bienvenidas!
+* [**@maxbeatty**](https://twitter.com/maxbeatty) está trabajando en una nueva versión del backend de [jsperf.com](http://jsperf.com/), usando io.js hecho enteramente en [código abierto](https://github.com/jsperf/jsperf.com).  ¡Contribuciones bienvenidas!
 
 * [@eranhammer](https://twitter.com/eranhammer) escribió un articulo llamado [The Node Version Dilemma](http://hueniverse.com/2015/03/02/the-node-version-dilemma/) en el que se discute sobre varias versiones node.js / io.js y propone cuales usar y cuando usarlas.
 
 # Soporte io.js Añadido
 
-* **[scrypt](https://npmjs.com/scrypt)** ahora soporta io.js. Aprende más acerca de esto en el su [GitHub issue](https://github.com/barrysteyn/node-scrypt/issues/39)
+* **[scrypt](https://npmjs.com/scrypt)** ahora soporta io.js. Aprende más acerca de esto en este [GitHub issue](https://github.com/barrysteyn/node-scrypt/issues/39)
 * **[proxyquire](https://github.com/thlorenz/proxyquire)** v1.3.2 publicado con soporte para iojs.
