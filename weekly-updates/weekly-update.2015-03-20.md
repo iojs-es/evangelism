@@ -7,7 +7,7 @@ Esta semana se liberaron dos versiones de io.js, la [v1.6.1](https://iojs.org/di
 #### 1.6.1
 
 * **path**: la comprobación de tipos en `path.resolve()` [#1153](https://github.com/iojs/io.js/pull/1153) no cubría algunos casos extremos que podían ser invocados en ambientes naturales, siendo el más notable `path.dirname(undefined)`. La verificación de tipos ha sido relajada para `path.dirname()`, `path.basename()`, y `path.extname()` (Colin Ihrig) [#1216](https://github.com/iojs/io.js/pull/1216).
-* **querystring**: optimizciones internas en `querystring.parse()` y `querystring.stringify()` [#847](https://github.com/iojs/io.js/pull/847) previenen que los literales `Number` sean propiamente convertidos mediante `querystring.escape()` [#1208](https://github.com/iojs/io.js/issues/1208), exponiendo un punto ciego en el conjunto de pruebas. El bug y las pruebas han sido corregidos (Jeremiah Senkpiel) [#1213](https://github.com/iojs/io.js/pull/1213).
+* **querystring**: optimizaciones internas en `querystring.parse()` y `querystring.stringify()` [#847](https://github.com/iojs/io.js/pull/847) previenen que los literales `Number` sean propiamente convertidos mediante `querystring.escape()` [#1208](https://github.com/iojs/io.js/issues/1208), exponiendo un punto ciego en el conjunto de pruebas. El bug y las pruebas han sido corregidos (Jeremiah Senkpiel) [#1213](https://github.com/iojs/io.js/pull/1213).
 
 #### 1.6.0
 
