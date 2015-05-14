@@ -1,29 +1,29 @@
-# io.js 2.0 releases
-This week we had two io.js releases [v2.0.0](https://iojs.org/dist/v2.0.0/) and [v2.0.1](https://iojs.org/dist/v2.0.1/), complete changelog can be found [on GitHub](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md).
+# Publicaciones de io.js 2.0.0
+Esta semana publicamos dos versiones de io.js, la [v2.0.0](https://iojs.org/dist/v2.0.0/) y [v2.0.1](https://iojs.org/dist/v2.0.1/), el listado de cambios completo está disponible [en GitHub](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md).
 
 ### Notable changes
 
 #### 2.0.1
 * **async_wrap**: (Trevor Norris) [#1614](https://github.com/iojs/io.js/pull/1614)
-  - it is now possible to filter by providers
-  - bit flags have been removed and replaced with method calls on the binding object
-  - _note that this is an unstable API so feature additions and breaking changes won't change io.js semver_
-* **libuv**: resolves numerous io.js issues:
-  - [#862](https://github.com/iojs/io.js/issues/862) prevent spawning child processes with invalid stdio file descriptors
-  - [#1397](https://github.com/iojs/io.js/issues/1397) fix EPERM error with fs.access(W_OK) on Windows
-  - [#1621](https://github.com/iojs/io.js/issues/1621) build errors associated with the bundled libuv
-  - [#1512](https://github.com/iojs/io.js/issues/1512) should properly fix Windows termination errors
-* **addons**: the `NODE_DEPRECATED` macro was causing problems when compiling addons with older compilers, this should now be resolved (Ben Noordhuis) [#1626](https://github.com/iojs/io.js/pull/1626)
-* **V8**: upgrade V8 from 4.2.77.18 to 4.2.77.20 with minor fixes, including a bug preventing builds on FreeBSD
+  - ahora es posible filtrar por proveedores
+  - pequeños flags han sido removidos y reemplazados con llamadas a métodos en el objeto vinculante
+  - _ten en cuenta que esta es una API inestable, y las adiciones de fetaures y cambios profundos no cambiarán la versión de semver_
+* **libuv**: resuelve numerosos issues de io.js:
+  - [#862](https://github.com/iojs/io.js/issues/862) previene la creación de procesos hijos con descriptores de stdio inválidos
+  - [#1397](https://github.com/iojs/io.js/issues/1397) corrige el error EPERM con fs.access(W_OK) sobre Windows
+  - [#1621](https://github.com/iojs/io.js/issues/1621) construye errores asociados al empaquetado de libuv
+  - [#1512](https://github.com/iojs/io.js/issues/1512) debe finalizar apropiadamente errores
+* **addons**: la macro `NODE_DEPRECATED` estaba causando problemas al compilar complementos con compiladores antiguos, esto debería haberse resuelto (Ben Noordhuis) [#1626](https://github.com/iojs/io.js/pull/1626)
+* **V8**: se actualiza V8 de 4.2.77.18 a 4.2.77.20 con cambios menores, incluido un bug que prevenía compilaciones sobre FreeBSD
 
 #### 2.0.0
-* **crypto**: significantly reduced memory usage for TLS (Fedor Indutny & Сковорода Никита Андреевич) [#1529](https://github.com/iojs/io.js/pull/1529)
-* **net**: `socket.connect()` now accepts a `'lookup'` option for a custom DNS resolution mechanism, defaults to `dns.lookup()` (Evan Lucas) [#1505](https://github.com/iojs/io.js/pull/1505)
-* **npm**: Upgrade npm to 2.9.0. See the [v2.8.4](https://github.com/npm/npm/releases/tag/v2.8.4) and [v2.9.0](https://github.com/npm/npm/releases/tag/v2.9.0) release notes for details. Notable items:
-  - Add support for default author field to make `npm init -y` work without user-input (@othiym23) [npm/npm/d8eee6cf9d](https://github.com/npm/npm/commit/d8eee6cf9d2ff7aca68dfaed2de76824a3e0d9af)
-  - Include local modules in `npm outdated` and `npm update` (@ArnaudRinquin) [npm/npm#7426](https://github.com/npm/npm/issues/7426)
-  - The prefix used before the version number on `npm version` is now configurable via `tag-version-prefix` (@kkragenbrink) [npm/npm#8014](https://github.com/npm/npm/issues/8014)
-* **os**: `os.tmpdir()` is now cross-platform consistent and will no longer returns a path with a trailling slash on any platform (Christian Tellnes) [#747](https://github.com/iojs/io.js/pull/747)
+* **crypto**: se reduce significativamente el uso de memoria para TLS (Fedor Indutny & Сковорода Никита Андреевич) [#1529](https://github.com/iojs/io.js/pull/1529)
+* **net**: `socket.connect()` ahora recibe la opción `'lookup'` para un mecanismo de resolución DNS personalizado, siendo el predeterminado `dns.lookup()` (Evan Lucas) [#1505](https://github.com/iojs/io.js/pull/1505)
+* **npm**: Actualizado a npm 2.9.0. Vea las notas de publicación de [v2.8.4](https://github.com/npm/npm/releases/tag/v2.8.4) y [v2.9.0](https://github.com/npm/npm/releases/tag/v2.9.0) para más detalles. Puntos notables:
+  - Soporte agregado para el campo de autor predeterminado al hacer `npm init -y` funciona sin interacción de usuario (@othiym23) [npm/npm/d8eee6cf9d](https://github.com/npm/npm/commit/d8eee6cf9d2ff7aca68dfaed2de76824a3e0d9af)
+  - Incluye módulos locales en `npm outdated` y `npm update` (@ArnaudRinquin) [npm/npm#7426](https://github.com/npm/npm/issues/7426)
+  - El prefijo usado antes del número de versión en `npm version` ahora se puede configurar mediante `tag-version-prefix` (@kkragenbrink) [npm/npm#8014](https://github.com/npm/npm/issues/8014)
+* **os**: `os.tmpdir()` ahora es consistente con multi-platforma y no sigue retornando una ruta con un slash al final en cualquier plataforma (Christian Tellnes) [#747](https://github.com/iojs/io.js/pull/747)
 * **process**:
   - `process.nextTick()` performance has been improved by between 2-42% across the benchmark suite, notable because this is heavily used across core (Brian White) [#1571](https://github.com/iojs/io.js/pull/1571)
   - New `process.geteuid()`, `process.seteuid(id)`, `process.getegid()` and `process.setegid(id)` methods allow you to get and set effective UID and GID of the process (Evan Lucas) [#1536](https://github.com/iojs/io.js/pull/1536)
@@ -72,9 +72,9 @@ See https://github.com/iojs/io.js/labels/confirmed-bug for complete and current 
 * CodeSchool [blog post](https://www.codeschool.com/blog/2015/05/08/whats-new-in-io-js-2-0-0/) on what's new in io.js 2.0.
 * Node Lead TJ Fontaine [steps back](http://blog.nodejs.org/2015/05/08/next-chapter/) from leader.
 
-### Upcoming Events
+# Próximos eventos
 
-* [NodeConf Adventure](http://nodeconf.com/) tickets are on sale, June 11th - 14th at Walker Creek Ranch, CA
-* [CascadiaJS](http://2015.cascadiajs.com/) tickets are on sale, July 8th - 10th at Washington State
-* [BrazilJS Conf](http://braziljs.com.br/) tickets are on sale, August 21st - 22nd at Shopping Center BarraShoppingSul
-* [NodeConf EU](http://nodeconf.eu/) tickets are on sale, September 6th - 9th at Waterford, Ireland
+* Los tickets para la [NodeConf](http://nodeconf.com/) están ya a la venta, el evento será del 11 al 14 de junio en Walker Creek Ranch, CA
+* Los tickets para [CascadiaJS](http://2015.cascadiajs.com/) están ya a la venta, el evento será del 8 al 10 de julio en el Estado de Washington
+* Los tickets para la [BrazilJS Conf](http://braziljs.com.br/) están ya a la venta, el evento será del 21 al 22 de Agosto en el centro comercial BarraShoppingSul
+* Los tickets para la [NodeConf EU](http://nodeconf.eu/) están ya a la venta, el evento será del 6 al 9 de Septiembre en Waterford, Irlanda
