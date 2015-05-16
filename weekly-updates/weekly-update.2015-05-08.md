@@ -23,7 +23,7 @@ Esta semana publicamos dos versiones de io.js, la [v2.0.0](https://iojs.org/dist
   - Soporte agregado para el campo de autor predeterminado al hacer `npm init -y` funciona sin interacción de usuario (@othiym23) [npm/npm/d8eee6cf9d](https://github.com/npm/npm/commit/d8eee6cf9d2ff7aca68dfaed2de76824a3e0d9af)
   - Incluye módulos locales en `npm outdated` y `npm update` (@ArnaudRinquin) [npm/npm#7426](https://github.com/npm/npm/issues/7426)
   - El prefijo usado antes del número de versión en `npm version` ahora se puede configurar mediante `tag-version-prefix` (@kkragenbrink) [npm/npm#8014](https://github.com/npm/npm/issues/8014)
-* **os**: `os.tmpdir()` ahora es consistente con multi-platforma y no sigue retornando una ruta con un slash al final en cualquier plataforma (Christian Tellnes) [#747](https://github.com/iojs/io.js/pull/747)
+* **os**: `os.tmpdir()` ahora es consistente con multi-platforma y no seguirá retornando una ruta con un slash al final en cualquier plataforma (Christian Tellnes) [#747](https://github.com/iojs/io.js/pull/747)
 * **process**:
   - `process.nextTick()` performance has been improved by between 2-42% across the benchmark suite, notable because this is heavily used across core (Brian White) [#1571](https://github.com/iojs/io.js/pull/1571)
   - New `process.geteuid()`, `process.seteuid(id)`, `process.getegid()` and `process.setegid(id)` methods allow you to get and set effective UID and GID of the process (Evan Lucas) [#1536](https://github.com/iojs/io.js/pull/1536)
