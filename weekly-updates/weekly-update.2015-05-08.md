@@ -25,17 +25,17 @@ Esta semana publicamos dos versiones de io.js, la [v2.0.0](https://iojs.org/dist
   - El prefijo usado antes del número de versión en `npm version` ahora se puede configurar mediante `tag-version-prefix` (@kkragenbrink) [npm/npm#8014](https://github.com/npm/npm/issues/8014)
 * **os**: `os.tmpdir()` ahora es consistente con multi-platforma y no seguirá retornando una ruta con un slash al final en cualquier plataforma (Christian Tellnes) [#747](https://github.com/iojs/io.js/pull/747)
 * **process**:
-  - `process.nextTick()` performance has been improved by between 2-42% across the benchmark suite, notable because this is heavily used across core (Brian White) [#1571](https://github.com/iojs/io.js/pull/1571)
-  - New `process.geteuid()`, `process.seteuid(id)`, `process.getegid()` and `process.setegid(id)` methods allow you to get and set effective UID and GID of the process (Evan Lucas) [#1536](https://github.com/iojs/io.js/pull/1536)
+  - El rendimiento de `process.nextTick()` ha mejorado entre 2 y 42% alrededor de la suite de medición, es notable porque es fuertemente utilizado alrededor del núcleo (Brian White) [#1571](https://github.com/iojs/io.js/pull/1571)
+  - Los nuevos métodos `process.geteuid()`, `process.seteuid(id)`, `process.getegid()` and `process.setegid(id)` te permiten obtener y establecer de manera efectiva el UID y GID del proceso (Evan Lucas) [#1536](https://github.com/iojs/io.js/pull/1536)
 * **repl**:
-  - REPL history can be persisted across sessions if the `NODE_REPL_HISTORY_FILE` environment variable is set to a user accessible file, `NODE_REPL_HISTORY_SIZE` can set the maximum history size and defaults to `1000` (Chris Dickinson) [#1513](https://github.com/iojs/io.js/pull/1513)
-  - The REPL can be placed in to one of three modes using the `NODE_REPL_MODE` environment variable: `sloppy`, `strict` or `magic` (default); the new `magic` mode will automatically run "strict mode only" statements in strict mode (Chris Dickinson) [#1513](https://github.com/iojs/io.js/pull/1513)
-* **smalloc**: the 'smalloc' module has been deprecated due to changes coming in V8 4.4 that will render it unusable
-* **util**: add Promise, Map and Set inspection support (Christopher Monsanto) [#1471](https://github.com/iojs/io.js/pull/1471)
-* **V8**: upgrade to 4.2.77.18, see the [ChangeLog](https://chromium.googlesource.com/v8/v8/+/refs/heads/4.2.77/ChangeLog) for full details. Notable items:
-  - Classes have moved out of staging; the `class` keyword is now usable in strict mode without flags
-  - Object literal enhancements have moved out of staging; shorthand method and property syntax is now usable (`{ method() { }, property }`)
-  - Rest parameters (`function(...args) {}`) are implemented in staging behind the `--harmony-rest-parameters` flag
+  - El historial de REPL ahora persiste entre sesiones si la variable de entorno `NODE_REPL_HISTORY_FILE` está establecida a un archivo accesible al usuario, `NODE_REPL_HISTORY_SIZE` permite establecer el tamaño máximo del historial y está predeterminado a `1000` (Chris Dickinson) [#1513](https://github.com/iojs/io.js/pull/1513)
+  - El REPL puede ser ubicado en uno de los tres modos usando la variable de entorno `NODE_REPL_MODE`: `sloppy`, `strict` o `magic` (predeterminado); el nuevo modo `magic` automáticamente ejecutará las expresiones "strict mode only" en _strict_ mode (Chris Dickinson) [#1513](https://github.com/iojs/io.js/pull/1513)
+* **smalloc**: el módulo 'smalloc' ha sido deprecado debido a los cambios que se vienen en V8 4.4 que la volverán inusable.
+* **util**: se agrega a Promise, Map y Set soporte de inspección (Christopher Monsanto) [#1471](https://github.com/iojs/io.js/pull/1471)
+* **V8**: se actualizó a 4.2.77.18, mira el registro de cambios completo [ChangeLog](https://chromium.googlesource.com/v8/v8/+/refs/heads/4.2.77/ChangeLog) para más detalles. Cambios notables:
+  - Las clases se han movido fuera del área de preparación; la palabra reservada `class` ahora es usable en _strict mode_ sin flags
+  - Las mejoras de object literals se han movido fuera del área de preparación; la sintáxis de shorthand para métodos y propiedades ahora es usable (`{ method() { }, property }`)
+  - Rest parameters (`function(...args) {}`) se han implementado en el área de preparación detrás de la flag `--harmony-rest-parameters`
   - Computed property names (`{['foo'+'bar']:'bam'}`) are implemented in staging behind the `--harmony-computed-property-names` flag
   - Unicode escapes (`'\u{xxxx}'`) are implemented in staging behind the `--harmony_unicode` flag and the `--harmony_unicode_regexps` flag for use in regular expressions
 * **Windows**:
