@@ -34,16 +34,16 @@ Esta semana publicamos dos versiones de io.js, la [v2.0.0](https://iojs.org/dist
 * **util**: se agrega a Promise, Map y Set soporte de inspección (Christopher Monsanto) [#1471](https://github.com/iojs/io.js/pull/1471)
 * **V8**: se actualizó a 4.2.77.18, mira el registro de cambios completo [ChangeLog](https://chromium.googlesource.com/v8/v8/+/refs/heads/4.2.77/ChangeLog) para más detalles. Cambios notables:
   - Las clases se han movido fuera del área de preparación; la palabra reservada `class` ahora es usable en _strict mode_ sin flags
-  - Las mejoras de object literals se han movido fuera del área de preparación; la sintáxis de shorthand para métodos y propiedades ahora es usable (`{ method() { }, property }`)
-  - Rest parameters (`function(...args) {}`) se han implementado en el área de preparación detrás de la flag `--harmony-rest-parameters`
-  - Computed property names (`{['foo'+'bar']:'bam'}`) are implemented in staging behind the `--harmony-computed-property-names` flag
-  - Unicode escapes (`'\u{xxxx}'`) are implemented in staging behind the `--harmony_unicode` flag and the `--harmony_unicode_regexps` flag for use in regular expressions
+  - Las mejoras de _object literals_ se han movido fuera del área de preparación; la sintáxis de shorthand para métodos y propiedades ahora es usable (`{ method() { }, property }`)
+  - Los _rest parameters_ (`function(...args) {}`) se han implementado en el área de preparación detrás de la flag `--harmony-rest-parameters`
+  - Los nombres de propiedad computados (`{['foo'+'bar']:'bam'}`) se han implementado en el área de preparación detrás de la flag `--harmony-computed-property-names`
+  - Los escapes de unicode (`'\u{xxxx}'`) se han implementado en el área de preparación detrás de la flag `--harmony_unicode` y la flag `--harmony_unicode_regexps` para su uso en expresiones regulares
 * **Windows**:
-  - Random process termination on Windows fixed (Fedor Indutny)  [#1512](https://github.com/iojs/io.js/issues/1512) / [#1563](https://github.com/iojs/io.js/pull/1563)
-  - The delay-load hook introduced to fix issues with process naming (iojs.exe / node.exe) has been made opt-out for native add-ons. Native add-ons should include `'win_delay_load_hook': 'false'` in their binding.gyp to disable this feature if they experience problems . (Bert Belder) [#1433](https://github.com/iojs/io.js/pull/1433)
+  - La terminación anómala de procesos se ha corregido (Fedor Indutny)  [#1512](https://github.com/iojs/io.js/issues/1512) / [#1563](https://github.com/iojs/io.js/pull/1563)
+  - El evento de carga pendiente introducido para corregir problemas con el nombre de procesos (iojs.exe / node.exe) se hizo opt-out para complementos nativos. Los complementos nativos deben incluir `'win_delay_load_hook': 'false'` en su binding.gyp para deshabilitar esta característica si experimentan problemas. (Bert Belder) [#1433](https://github.com/iojs/io.js/pull/1433)
 * **Governance**:
-  - Rod Vagg (@rvagg) was added to the Technical Committee (TC)
-  - Jeremiah Senkpiel (@Fishrock123) was added to the Technical Committee (TC)
+  - Rod Vagg (@rvagg) fue agregado al Technical Committee (TC)
+  - Jeremiah Senkpiel (@Fishrock123) fue agregado al Technical Committee (TC)
 
 ### Breaking changes
 
