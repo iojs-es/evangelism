@@ -1,19 +1,16 @@
-# io.js 1.8.1 release
-This week we had one io.js release [v1.8.1](https://iojs.org/dist/v1.8.1/), complete changelog can be found [on GitHub](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md).
+# Publicación de io.js 1.8.1
+Esta semana tuvimos una publicación de io.js [v1.8.1](https://iojs.org/dist/v1.8.1/), el changelog completo puede encontrarse [en GitHub](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md).
 
-### Notable changes
+### Cambios notables
 
-* **NOTICE**: Skipped v1.8.0 due to problems with release tooling.
-  See [#1436](https://github.com/iojs/io.js/issues/1436) for details.
-* **build**: Support for building io.js as a static library (Marat Abdullin) [#1341](https://github.com/iojs/io.js/pull/1341)
-* **deps**: Upgrade openssl to 1.0.2a (Shigeki Ohtsu) [#1389](https://github.com/iojs/io.js/pull/1389)
-  * Users should see performance improvements when using the crypto API.
-  See [here](https://github.com/iojs/io.js/wiki/Crypto-Performance-Notes-for-OpenSSL-1.0.2a-on-iojs-v1.8.0)
-  for details.
-* **npm**: Upgrade npm to 2.8.3. See the [release notes](https://github.com/npm/npm/releases/tag/v2.8.3) for details. Includes improved git support.
-* **src**: Allow multiple arguments to be passed to process.nextTick (Trevor Norris) [#1077](https://github.com/iojs/io.js/pull/1077)
-* **module**: The interaction of `require('.')` with `NODE_PATH` has been restored and deprecated. This functionality
-will be removed at a later point. (Roman Reiss) [#1363](https://github.com/iojs/io.js/pull/1363)
+* **Aviso**: Se saltó v1.8.0 debido a problemas con el sistema de publicación.
+  Véase [#1436](https://github.com/iojs/io.js/issues/1436) para más detalle.
+* **build**: Soporte para compilar io.js como librería estática (Marat Abdullin) [#1341](https://github.com/iojs/io.js/pull/1341)
+* **deps**: Actualización de openssl a 1.0.2a (Shigeki Ohtsu) [#1389](https://github.com/iojs/io.js/pull/1389)
+  * Usuarios deben de ver mejoras de rendimiento cuando usen la API de crypto. Véase [este link](https://github.com/iojs/io.js/wiki/Crypto-Performance-Notes-for-OpenSSL-1.0.2a-on-iojs-v1.8.0) para más detalle.
+* **npm**: Actualización de npm a 2.8.3. Véase las [notas de publicación](https://github.com/npm/npm/releases/tag/v2.8.3) para más detalle. Incluye mejor soporte para git.
+* **src**: Se permiten pasar múltiples argumentos a process.nextTick (Trevor Norris) [#1077](https://github.com/iojs/io.js/pull/1077)
+* **module**: La interacción de `require('.')` con `NODE_PATH` ha sido restaurada y deprecada. Esta funcionalidad será removida en un futuro. (Roman Reiss) [#1363](https://github.com/iojs/io.js/pull/1363)
 
 ### Problemas conocidos
 Vea https://github.com/iojs/io.js/labels/confirmed-bug para una lista completa y más actual de los problemas conocidos.
