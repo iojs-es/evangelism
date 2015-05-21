@@ -72,7 +72,7 @@ Vea https://github.com/iojs/io.js/labels/confirmed-bug para una lista completa y
 * La [publicación](https://www.codeschool.com/blog/2015/05/08/whats-new-in-io-js-2-0-0/) de CodeSchool sobre lo nuevo en io.js 2.0.0
 * El Node Lead, TJ Fontaine [se retira](http://blog.nodejs.org/2015/05/08/next-chapter/) de su puesto.
 
-# Próximos eventos
+### Próximos eventos
 
 * Los tickets para la [NodeConf](http://nodeconf.com/) están ya a la venta, el evento será del 11 al 14 de junio en Walker Creek Ranch, CA
 * Los tickets para [CascadiaJS](http://2015.cascadiajs.com/) están ya a la venta, el evento será del 8 al 10 de julio en el Estado de Washington
