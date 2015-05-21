@@ -1,20 +1,20 @@
-# io.js News
+# Novedades de io.js
 
-We are happy to announce this news, **"io.js decides to join the Node Foundation"**. And our organization name will be renamed `nodejs`.
+Estamos emocionados de anunciar que **"io.js ha decidido unirse a la Node Foundation"**. Por esto que nuestra organización será renombrada a `nodejs`.
 
-As a first step, we will move from `iojs` organization to `nodejs` organization and will converge `joyent/node` gradually. We will continue to release `io.js` until the convergence have done.
+Como primer paso, moveremos la organización de `iojs` a `nodejs` y continuaremos la convergencia de `joyent/node` gradualmente. Continuaremos liberando `io.js` hasta que la convergencia esté completa.
 
-If you would like to see the convergence plan in detail, please check it at [jasnell repo](https://github.com/jasnell/dev-policy/blob/master/convergence.md). When you would like to ask questions, feel free to ask [@Fishrock123](mailto:fishrock123@rocketmail.com). The discussion log is [here](https://github.com/nodejs/node/issues/1664). 
+Si te gustaría ver el plan de converegencia en detalle, por favor revisalo en el [repo](https://github.com/jasnell/dev-policy/blob/master/convergence.md) de jasnell. Cuando quieras realizar preguntas, sientete libre de hacerlas a  [@Fishrock123](mailto:fishrock123@rocketmail.com). El registro de discusiones está [aquí](https://github.com/nodejs/node/issues/1664).
 
-### Community Updates
+### Actualizaciones de la comunidad
 
-* [Performance Showdown](https://raygun.io/blog/2015/05/performance-showdown-node-js-vs-io-js-v2-0-0/): Node.js vs. io.js v2.0.0.
-* Microsoft has [node.js](https://github.com/Microsoft/node) running on their JavaScript VM `Chakra`.
-* {node,io}.js [benchmark graphs](http://thlorenz.com/benchgraph/).
-* [TC members](https://twitter.com/rvagg/status/598605393636429825) decide to move io.js to Node Foundation and the organization name will be renamed nodejs.
-* Hardware WG Meeting on [YouTube](https://www.youtube.com/watch?v=EFJVMGRtDWE).
-* `io.js/node.js` Build Convergence Meeting on [YouTube](https://www.youtube.com/watch?v=8dxkM9vHmrY).
-* TC Meeting on [YouTube](https://www.youtube.com/watch?v=UbYiFLf7MpU).
+* [Muestra de rendimiento](https://raygun.io/blog/2015/05/performance-showdown-node-js-vs-io-js-v2-0-0/): Node.js vs. io.js v2.0.0.
+* Microsoft habilitó a [node.js](https://github.com/Microsoft/node) para ejecutarse en su máquina virtual de Javascript, `Chakra`.
+* [Gráficas de rendimiento](http://thlorenz.com/benchgraph/) de {node,io}.js.
+* [Los miembros](https://twitter.com/rvagg/status/598605393636429825) del TC deciden mover a io.js a la Node Foundation y el nombre de la organización será cambiado a nodejs.
+* La reunión del Hardware WG en [YouTube](https://www.youtube.com/watch?v=EFJVMGRtDWE).
+* La  Build Convergence Meeting `io.js/node.js` en [YouTube](https://www.youtube.com/watch?v=8dxkM9vHmrY).
+* Reunión del TC en [YouTube](https://www.youtube.com/watch?v=UbYiFLf7MpU).
 
 ### Upcoming Events
 
