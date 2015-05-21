@@ -65,7 +65,7 @@ Vea https://github.com/iojs/io.js/labels/confirmed-bug para una lista completa y
 * `url.resolve` puede transferir una porción de la autorización de la url mientras se resuelve entre dos hosts, vea [#1435](https://github.com/iojs/io.js/issues/1435).
 * readline: los escapes de separación se están procesando incorrectamente, vea [#1403](https://github.com/iojs/io.js/issues/1403)
 
-### Community Updates
+### Actualizaciones de la comunidad
 
 * Michael Dawson crea la [WG proposal](https://github.com/mhdawson/workgroup-proposals) bajo la Node Foundation.
 * Mikeal Rogers escribe acerca del crecimiento con io.js [en Medium](https://medium.com/node-js-javascript/growing-up-27d6cc8b7c53).
