@@ -47,30 +47,30 @@ Esta semana publicamos dos versiones de io.js, la [v2.0.0](https://iojs.org/dist
 
 ### Breaking changes
 
-Full details at https://github.com/iojs/io.js/wiki/Breaking-Changes#200-from-1x
+Todos los detalles en https://github.com/iojs/io.js/wiki/Breaking-Changes#200-from-1x
 
-* V8 upgrade to 4.2, minor changes to C++ API
-* `os.tmpdir()` is now cross-platform consistent and will no longer returns a path with a trailling slash on any platform
-* While not a *breaking change* the 'smalloc' module has been deprecated in anticipation of it becoming unsupportable with a future upgrade to V8 4.4. See [#1451](https://github.com/iojs/io.js/issues/1451)  for further information.
+* V8 se actualiza a to 4.2, con cambios menores en la API de C++
+* `os.tmpdir()` ahora es consistente con multi-platformas y no seguirá retornando una ruta con un slash al final en cualquier plataforma
+* Aunque no es un *breaking change* el módulo 'smalloc' ha sido deprecado en anticipación a la pérdida de soporte en una futura actualización a  V8 4.4. Vea [#1451](https://github.com/iojs/io.js/issues/1451) para mayor información.
 
-_Note: a new version of the 'url' module was reverted prior to release as it was decided the potential for breakage across the npm ecosystem was too great and that more compatibility work needed to be done before releasing it. See [#1602](https://github.com/iojs/io.js/pull/1602) for further information._
+_Nota: una nueva versión del módulo 'url' fue revertida antes de la publicación ya que se determina que el potencial de rompimiento alrededor del ecosistema npm era muy grande y que se necesita trabajar más en la compatibilidad antes de liberarlo. Vea [#1602](https://github.com/iojs/io.js/pull/1602) para más información._
 
-### Known issues
-See https://github.com/iojs/io.js/labels/confirmed-bug for complete and current list of known issues.
+### Problemas conocidos
+Vea https://github.com/iojs/io.js/labels/confirmed-bug para una lista completa y más actual de los problemas conocidos.
 
-* Some problems with unreferenced timers running during `beforeExit` are still to be resolved. See [#1264](https://github.com/iojs/io.js/issues/1264).
-* Surrogate pair in REPL can freeze terminal [#690](https://github.com/iojs/io.js/issues/690)
-* `process.send()` is not synchronous as the docs suggest, a regression introduced in 1.0.2, see [#760](https://github.com/iojs/io.js/issues/760) and fix in [#774](https://github.com/iojs/io.js/issues/774)
-* Calling `dns.setServers()` while a DNS query is in progress can cause the process to crash on a failed assertion [#894](https://github.com/iojs/io.js/issues/894)
-* `url.resolve` may transfer the auth portion of the url when resolving between two full hosts, see [#1435](https://github.com/iojs/io.js/issues/1435).
-* readline: split escapes are processed incorrectly, see [#1403](https://github.com/iojs/io.js/issues/1403)
+* Algunos problemas con timers no referenciados ejecutandose durante `beforeExit` aún se encuentran por resolver. Vea [#1264](https://github.com/iojs/io.js/issues/1264).
+* Un par suplente en el REPL puede congelar la terminal [#690](https://github.com/iojs/io.js/issues/690)
+* `process.send()` no es una acción síncrona como la documentación sugiere, una regresión introducida en el 1.0.2, vea [#760](https://github.com/iojs/io.js/issues/760) y la solución en el [#774](https://github.com/iojs/io.js/issues/774)
+* Llamar a `dns.setServers()` mientras una consulta DNS está en progreso puede ocasionar que el proceso falle en una afirmación fallida [#894](https://github.com/iojs/io.js/issues/894)
+* `url.resolve` puede transferir una porción de la autorización de la url mientras se resuelve entre dos hosts, vea [#1435](https://github.com/iojs/io.js/issues/1435).
+* readline: los escapes de separación se están procesando incorrectamente, vea [#1403](https://github.com/iojs/io.js/issues/1403)
 
 ### Community Updates
 
-* Michael Dawson creates [WG proposal](https://github.com/mhdawson/workgroup-proposals) under the Node Foundation.
-* Mikeal Rogers wrote about growing up of io.js [on Medium](https://medium.com/node-js-javascript/growing-up-27d6cc8b7c53).
-* CodeSchool [blog post](https://www.codeschool.com/blog/2015/05/08/whats-new-in-io-js-2-0-0/) on what's new in io.js 2.0.
-* Node Lead TJ Fontaine [steps back](http://blog.nodejs.org/2015/05/08/next-chapter/) from leader.
+* Michael Dawson crea la [WG proposal](https://github.com/mhdawson/workgroup-proposals) bajo la Node Foundation.
+* Mikeal Rogers escribe acerca del crecimiento con io.js [en Medium](https://medium.com/node-js-javascript/growing-up-27d6cc8b7c53).
+* La [publicación](https://www.codeschool.com/blog/2015/05/08/whats-new-in-io-js-2-0-0/) de CodeSchool sobre lo nuevo en io.js 2.0.0
+* El Node Lead, TJ Fontaine [se retira](http://blog.nodejs.org/2015/05/08/next-chapter/) de su puesto.
 
 # Próximos eventos
 
