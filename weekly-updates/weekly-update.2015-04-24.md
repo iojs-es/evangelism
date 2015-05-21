@@ -15,25 +15,26 @@ This week we had one io.js release [v1.8.1](https://iojs.org/dist/v1.8.1/), comp
 * **module**: The interaction of `require('.')` with `NODE_PATH` has been restored and deprecated. This functionality
 will be removed at a later point. (Roman Reiss) [#1363](https://github.com/iojs/io.js/pull/1363)
 
-### Known issues
+### Problemas conocidos
+Vea https://github.com/iojs/io.js/labels/confirmed-bug para una lista completa y más actual de los problemas conocidos.
 
-* Some problems with unreferenced timers running during `beforeExit` are still to be resolved. See [#1264](https://github.com/iojs/io.js/issues/1264).
-* Surrogate pair in REPL can freeze terminal [#690](https://github.com/iojs/io.js/issues/690)
-* `process.send()` is not synchronous as the docs suggest, a regression introduced in 1.0.2, see [#760](https://github.com/iojs/io.js/issues/760) and fix in [#774](https://github.com/iojs/io.js/issues/774)
-* Calling `dns.setServers()` while a DNS query is in progress can cause the process to crash on a failed assertion [#894](https://github.com/iojs/io.js/issues/894)
-* `url.resolve` may transfer the auth portion of the url when resolving between two full hosts, see [#1435](https://github.com/iojs/io.js/issues/1435).
-* readline: split escapes are processed incorrectly, see [#1403](https://github.com/iojs/io.js/issues/1403)
+* Algunos problemas con timers no referenciados ejecutandose durante `beforeExit` aún se encuentran por resolver. Vea [#1264](https://github.com/iojs/io.js/issues/1264).
+* Un par suplente en el REPL puede congelar la terminal [#690](https://github.com/iojs/io.js/issues/690)
+* `process.send()` no es una acción síncrona como la documentación sugiere, una regresión introducida en el 1.0.2, vea [#760](https://github.com/iojs/io.js/issues/760) y la solución en el [#774](https://github.com/iojs/io.js/issues/774)
+* Llamar a `dns.setServers()` mientras una consulta DNS está en progreso puede ocasionar que el proceso falle en una afirmación fallida [#894](https://github.com/iojs/io.js/issues/894)
+* `url.resolve` puede transferir una porción de la autorización de la url mientras se resuelve entre dos hosts, vea [#1435](https://github.com/iojs/io.js/issues/1435).
+* readline: los escapes de separación se están procesando incorrectamente, vea [#1403](https://github.com/iojs/io.js/issues/1403)
 
-### Community Updates
+### Actualizaciones de la comunidad
 
-* Fedor Indutny opened discussion about removing TLS `newSession` and `resumeSession` event. [iojs/io.js#1462](https://github.com/iojs/io.js/issues/1462)
-* Proposal to change the C HTTP parser JS HTTP parser [here](https://github.com/iojs/io.js/pull/1457)
-* NPM founder talks about io.js at [InfoWorld](http://www.infoworld.com/article/2910594/node-js/npm-founder-foresees-merger-node-js-io-js.html)
-* Proposal to add mikeal, mscdex, shigeki as new TC members. [iojs/io.js#1483](https://github.com/iojs/io.js/issues/1483#issuecomment-95128140)
+* Fedor Indutny abrió una discusión acerca de remover los eventos `newSession` y `resumeSession` de TLS. [iojs/io.js#1462](https://github.com/iojs/io.js/issues/1462)
+* Propuesta para cambiar el parser HTTP de C a JS [aquí](https://github.com/iojs/io.js/pull/1457)
+* El fundador de NPM habla acerca de io.js en [InfoWorld](http://www.infoworld.com/article/2910594/node-js/npm-founder-foresees-merger-node-js-io-js.html)
+* Propuesta para agregar a mikeal, mscdex, shigeki como nuevos miembros del TC. [iojs/io.js#1483](https://github.com/iojs/io.js/issues/1483#issuecomment-95128140)
 
-### Upcoming Events
+### Próximos eventos
 
-* [JSConf Uruguay](http://jsconf.uy) tickets are on sale, April 24th & 25th at Montevideo, Uruguay
-* [NodeConf Adventure](http://nodeconf.com/) tickets are on sale, June 11th - 14th at Walker Creek Ranch, CA
-* [CascadiaJS](http://2015.cascadiajs.com/) tickets are on sale, July 8th - 10th at Washington State
-* [NodeConf EU](http://nodeconf.eu/) tickets are on sale, September 6th - 9th at Waterford, Ireland
+* Los tickets para la [NodeConf](http://nodeconf.com/) están ya a la venta, el evento será del 11 al 14 de junio en Walker Creek Ranch, CA
+* Los tickets para [CascadiaJS](http://2015.cascadiajs.com/) están ya a la venta, el evento será del 8 al 10 de julio en el Estado de Washington
+* Los tickets para la [BrazilJS Conf](http://braziljs.com.br/) están ya a la venta, el evento será del 21 al 22 de Agosto en el centro comercial BarraShoppingSul
+* Los tickets para la [NodeConf EU](http://nodeconf.eu/) están ya a la venta, el evento será del 6 al 9 de Septiembre en Waterford, Irlanda
