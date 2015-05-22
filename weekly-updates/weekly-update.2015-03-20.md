@@ -26,7 +26,7 @@ Esta semana se liberaron dos versiones de io.js, la [v1.6.1](https://iojs.org/di
 * Un par suplente en el REPL puede congelar la terminal [#690](https://github.com/iojs/io.js/issues/690)
 * No es posible compilar io.js como una librería estática [#686](https://github.com/iojs/io.js/issues/686)
 * `process.send()` no es una acción síncrona como la documentación sugiere, una regresión introducida en el 1.0.2, vea [#760](https://github.com/iojs/io.js/issues/760) y la solución en el [#774](https://github.com/iojs/io.js/issues/774)
-* Llamar a `dns.setServers()` mientras una consulta DNS está en progreso puede ocasionar que el proceso falle en una afirmación fallida [#894](https://github.com/iojs/io.js/issues/894)
+* Llamar a `dns.setServers()` mientras una consulta DNS está en progreso puede ocasionar que el proceso falle en una aserción fallida [#894](https://github.com/iojs/io.js/issues/894)
 
 # Actualizaciones de la comunidad
 
