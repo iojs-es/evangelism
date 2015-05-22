@@ -1,7 +1,7 @@
 # Publicaciones de io.js 2.0.0
 Esta semana publicamos dos versiones de io.js, la [v2.0.0](https://iojs.org/dist/v2.0.0/) y [v2.0.1](https://iojs.org/dist/v2.0.1/), el listado de cambios completo está disponible [en GitHub](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md).
 
-### Notable changes
+### Cambios notables
 
 #### 2.0.1
 * **async_wrap**: (Trevor Norris) [#1614](https://github.com/iojs/io.js/pull/1614)
