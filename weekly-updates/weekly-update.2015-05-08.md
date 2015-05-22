@@ -29,8 +29,8 @@ Esta semana publicamos dos versiones de io.js, la [v2.0.0](https://iojs.org/dist
   - Los nuevos métodos `process.geteuid()`, `process.seteuid(id)`, `process.getegid()` and `process.setegid(id)` te permiten obtener y establecer de manera efectiva el UID y GID del proceso (Evan Lucas) [#1536](https://github.com/iojs/io.js/pull/1536)
 * **repl**:
   - El historial de REPL ahora persiste entre sesiones si la variable de entorno `NODE_REPL_HISTORY_FILE` está establecida a un archivo accesible al usuario, `NODE_REPL_HISTORY_SIZE` permite establecer el tamaño máximo del historial y está predeterminado a `1000` (Chris Dickinson) [#1513](https://github.com/iojs/io.js/pull/1513)
-  - El REPL puede ser ubicado en uno de los tres modos usando la variable de entorno `NODE_REPL_MODE`: `sloppy`, `strict` o `magic` (predeterminado); el nuevo modo `magic` automáticamente ejecutará las expresiones "strict mode only" en _strict_ mode (Chris Dickinson) [#1513](https://github.com/iojs/io.js/pull/1513)
-* **smalloc**: el módulo 'smalloc' ha sido deprecado debido a los cambios que se vienen en V8 4.4 que la volverán inusable.
+  - El REPL puede ser ubicado en uno de los tres modos usando la variable de entorno `NODE_REPL_MODE`: `sloppy`, `strict` o `magic` (predeterminado); el nuevo modo `magic` ejecutará automáticamente las expresiones "strict mode only" en _strict_ mode (Chris Dickinson) [#1513](https://github.com/iojs/io.js/pull/1513)
+* **smalloc**: el módulo 'smalloc' ha sido deprecado debido a los cambios de V8 4.4 que la harán inservible.
 * **util**: se agrega a Promise, Map y Set soporte de inspección (Christopher Monsanto) [#1471](https://github.com/iojs/io.js/pull/1471)
 * **V8**: se actualizó a 4.2.77.18, mira el registro de cambios completo [ChangeLog](https://chromium.googlesource.com/v8/v8/+/refs/heads/4.2.77/ChangeLog) para más detalles. Cambios notables:
   - Las clases se han movido fuera del área de preparación; la palabra reservada `class` ahora es usable en _strict mode_ sin flags
