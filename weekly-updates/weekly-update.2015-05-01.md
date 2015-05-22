@@ -19,7 +19,7 @@ Esta semana tuvimos una nightly release de io.js, la [v2.0](https://iojs.org/dow
 
 ### Próximos eventos
 
-* Los tickets para la [NodeConf](http://nodeconf.com/) están ya a la venta, el evento será del 11 al 14 de junio en Walker Creek Ranch, CA
-* Los tickets para [CascadiaJS](http://2015.cascadiajs.com/) están ya a la venta, el evento será del 8 al 10 de julio en el Estado de Washington
+* Los tickets para la [NodeConf](http://nodeconf.com/) están ya a la venta, el evento será del 11 al 14 de Junio en Walker Creek Ranch, CA
+* Los tickets para [CascadiaJS](http://2015.cascadiajs.com/) están ya a la venta, el evento será del 8 al 10 de Julio en el Estado de Washington
 * Los tickets para la [BrazilJS Conf](http://braziljs.com.br/) están ya a la venta, el evento será del 21 al 22 de Agosto en el centro comercial BarraShoppingSul
 * Los tickets para la [NodeConf EU](http://nodeconf.eu/) están ya a la venta, el evento será del 6 al 9 de Septiembre en Waterford, Irlanda
