@@ -1,21 +1,21 @@
-# io.js 1.8, 2.0 and 2.1 releases
-This week we had three io.js releases [v1.8.2](https://iojs.org/dist/v1.8.2/), [v2.0.2](https://iojs.org/dist/v2.0.2/) and [v2.1.0](https://iojs.org/dist/v2.1.0/), complete changelog can be found [on GitHub](https://github.com/nodejs/io.js/blob/master/CHANGELOG.md).
+# Publicaciones de io.js 1.8, 2.0 y 2.1
+Esta semana tuvimos tres publicaciones de io.js, la [v1.8.2](https://iojs.org/dist/v1.8.2/), la [v2.0.2](https://iojs.org/dist/v2.0.2/) y la [v2.1.0](https://iojs.org/dist/v2.1.0/), el registro de cambios completo se encuentra [en GitHub](https://github.com/nodejs/io.js/blob/master/CHANGELOG.md).
 
-### Notable changes
+### Cambios notables
 
 #### 1.8.2
 
-**Maintenance release**
+**Publicación de mantenimiento**
 
-* **crypto**: significantly reduced memory usage for TLS (Fedor Indutny & Сковорода Никита Андреевич) [#1529](https://github.com/nodejs/io.js/pull/1529)
-* **npm**: Upgrade npm to 2.9.0. See the [v2.8.4](https://github.com/npm/npm/releases/tag/v2.8.4) and [v2.9.0](https://github.com/npm/npm/releases/tag/v2.9.0) release notes for details.
+* **crypto**: reducción significativa del uso de memoria para TLS (Fedor Indutny & Сковорода Никита Андреевич) [#1529](https://github.com/nodejs/io.js/pull/1529)
+* **npm**: Se actualizó npm a la versión 2.9.0. Mire las notas de publicación de la [v2.8.4](https://github.com/npm/npm/releases/tag/v2.8.4) y la [v2.9.0](https://github.com/npm/npm/releases/tag/v2.9.0) para más detalles.
 
 #### 2.0.2
 
-* **win,node-gyp**: the delay-load hook for windows addons has now been correctly enabled by default, it had wrongly defaulted to off in the release version of 2.0.0 (Bert Belder) [#1433](https://github.com/nodejs/io.js/pull/1433)
-* **os**: `tmpdir()`'s trailing slash stripping has been refined to fix an issue when the temp directory is at '/'. Also considers which slash is used by the operating system. (cjihrig) [#1673](https://github.com/nodejs/io.js/pull/1673)
-* **tls**: default ciphers have been updated to use gcm and aes128 (Mike MacCana) [#1660](https://github.com/nodejs/io.js/pull/1660)
-* **build**: v8 snapshots have been re-enabled by default as suggested by the v8 team, since prior security issues have been resolved. This should give some perf improvements to both startup and vm context creation. (Trevor Norris) [#1663](https://github.com/nodejs/io.js/pull/1663)
+* **win,node-gyp**: el hook de carga retardada para los addons de Windows ha sido correctamente habilitado por defecto, había sido erroneamente deshabilitado por defecto en la versión de publicación 2.0.0 (Bert Belder) [#1433](https://github.com/nodejs/io.js/pull/1433)
+* **os**: el recorte del slash sobrante en `tmpdir()` ha sido refinado para corregir un problema donde el directorio temporal está en '/'. También se considera cuál slash es usado por el sistema operativo. (cjihrig) [#1673](https://github.com/nodejs/io.js/pull/1673)
+* **tls**: los encriptadores por defecto se han actualizado para usar gcm y aes128 (Mike MacCana) [#1660](https://github.com/nodejs/io.js/pull/1660)
+* **build**: las snapshots de v8 se han reactivado por defecto por sugerencia del equipo v8, debido a que los anteriores incidentes de seguridad han sido resueltos. Esto debería brindar algunas mejoras de rendimiento tanto para el arranque y la creación del contexto de la vm. (Trevor Norris) [#1663](https://github.com/nodejs/io.js/pull/1663)
 * **src**: fixed preload modules not working when other flags were used before `--require` (Yosuke Furukawa) [#1694](https://github.com/nodejs/io.js/pull/1694)
 * **dgram**: fixed `send()`'s callback not being asynchronous (Yosuke Furukawa) [#1313](https://github.com/nodejs/io.js/pull/1313)
 * **readline**: emitKeys now keeps buffering data until it has enough to parse. This fixes an issue with parsing split escapes. (Alex Kocharin) [#1601](https://github.com/nodejs/io.js/pull/1601)
