@@ -6,7 +6,7 @@ Esta semana publicamos dos versiones de io.js, la [v2.0.0](https://iojs.org/dist
 #### 2.0.1
 * **async_wrap**: (Trevor Norris) [#1614](https://github.com/iojs/io.js/pull/1614)
   - ahora es posible filtrar por proveedores
-  - pequeños flags han sido removidos y reemplazados con llamadas a métodos en el objeto vinculante
+  - pequeños flags han sido removidos y reemplazados con llamadas a bindings
   - _ten en cuenta que esta es una API inestable, y las adiciones de fetaures y cambios profundos no cambiarán la versión de semver_
 * **libuv**: resuelve numerosos issues de io.js:
   - [#862](https://github.com/iojs/io.js/issues/862) previene la creación de procesos hijos con descriptores de stdio inválidos
